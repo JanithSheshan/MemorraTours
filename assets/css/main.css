@@ -981,6 +981,9 @@ section,
 
   .travel-hero .hero-text .hero-buttons .btn:last-child {
     margin-bottom: 0;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
   }
 
   .travel-hero .booking-form-wrapper .booking-form {
@@ -8471,9 +8474,35 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# Social Media Icons
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+.social-media-icons .social-icon {
+    background: #fff;
+    color: #0a232a;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(10,35,42,0.10);
+    font-size: 1.5rem;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+  }
+  .social-media-icons .social-icon:hover {
+    background: #0a232a;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(10,35,42,0.18);
+  }
+
+  /* Smooth fade effect */
+  #floating-social-icons {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  #floating-social-icons.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 

@@ -1,10 +1,3 @@
-/**
-* Template Name: Tour
-* Template URL: https://bootstrapmade.com/tour-bootstrap-travel-website-template/
-* Updated: Jul 01 2025 with Bootstrap v5.3.7
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 (function() {
   "use strict";
