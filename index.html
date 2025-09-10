@@ -72,8 +72,8 @@
       "email": "info@memorratours.com"
     },
     "sameAs": [
-      "https://facebook.com/memorratours",
-      "https://instagram.com/memorratours"
+      "https://www.facebook.com/memorratours",
+      "https://www.instagram.com/memorratours.sl"
     ]
   }
   </script>
@@ -87,9 +87,9 @@
     style="bottom:68px;right:24px;z-index:9999;display:flex;flex-direction:column;gap:12px;">
     <a href="https://www.tiktok.com/@memorra_tours" target="_blank" aria-label="TikTok" class="social-icon"><i
         class="bi bi-tiktok"></i></a>
-    <a href="https://facebook.com/memorratours" target="_blank" aria-label="Facebook" class="social-icon"><i
+    <a href="https://www.facebook.com/memorratours" target="_blank" aria-label="Facebook" class="social-icon"><i
         class="bi bi-facebook"></i></a>
-    <a href="https://instagram.com/memorratours" target="_blank" aria-label="Instagram" class="social-icon"><i
+    <a href="https://www.instagram.com/memorratours.sl" target="_blank" aria-label="Instagram" class="social-icon"><i
         class="bi bi-instagram"></i></a>
     <a href="https://www.youtube.com/@MemorraTours" target="_blank" aria-label="YouTube" class="social-icon"><i
         class="bi bi-youtube"></i></a>
@@ -104,12 +104,12 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#travel-hero" class="active">Home</a></li>
-          <li><a href="#why-us">About</a></li>
-          <li><a href="#featured-destinations">Destinations</a></li>
-          <li><a href="#featured-tours">Tours</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#travel-hero" class="nav-link">Home</a></li>
+          <li><a href="#why-us" class="nav-link">About</a></li>
+          <li><a href="#featured-destinations" class="nav-link">Destinations</a></li>
+          <li><a href="#featured-tours" class="nav-link">Tours</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -135,7 +135,7 @@
       <div class="container position-relative">
         <div class="row align-items-center">
           <!-- Hero Text -->
-          <div class="col-lg-7" style="padding-top: 150px;">
+          <div class="col-lg-7" style="padding-top: 30%; padding-bottom: 30%;">
             <div class="hero-text" data-aos="fade-up" data-aos-delay="100">
               <h1 class="hero-title">Crafting Journeys, Creating Memories</h1>
               <p class="hero-subtitle">
@@ -1539,8 +1539,8 @@
           <p>Stay connected and explore Sri Lanka with us on social media</p>
           <div class="social-links d-flex">
             <a href="https://www.tiktok.com/@memorra_tours" target="_blank"><i class="bi bi-tiktok"></i></a>
-            <a href="" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/memorratours" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/memorratours.sl" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://www.youtube.com/@MemorraTours" target="_blank"><i class="bi bi-youtube"></i></a>
             <a href="https://wa.me/94777402140" target="_blank"><i class="bi bi-whatsapp"></i></a>
           </div>
@@ -1612,6 +1612,35 @@
 
     // Also trigger once on load
     showIcons();
+
+      // Scrollspy for nav active class
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll('#navmenu .nav-link');
+        const sections = Array.from(navLinks).map(link => document.querySelector(link.getAttribute('href')));
+        function onScroll() {
+          let scrollPos = window.scrollY + 120; // header offset
+          let found = false;
+          for (let i = sections.length - 1; i >= 0; i--) {
+            if (sections[i] && sections[i].offsetTop <= scrollPos) {
+              navLinks.forEach(l => l.classList.remove('active'));
+              navLinks[i].classList.add('active');
+              found = true;
+              break;
+            }
+          }
+          if (!found) navLinks.forEach(l => l.classList.remove('active'));
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        // Click: set active immediately
+        navLinks.forEach((link, idx) => {
+          link.addEventListener('click', function () {
+            navLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+          });
+        });
+        onScroll();
+      });
+   
   </script>
 
 </body>
