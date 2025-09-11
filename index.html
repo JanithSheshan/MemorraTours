@@ -123,112 +123,45 @@
   <main class="main">
 
     <!-- Travel Hero Section -->
-    <section id="travel-hero" class="travel-hero section dark-background">
-
+    <section id="travel-hero" class="travel-hero section position-relative" style="padding: 0; background: linear-gradient(120deg, #0a232a 60%, #1e5c6e 100%); min-height: 100vh;">
       <div class="hero-background">
-        <video autoplay muted loop>
+        <video autoplay muted loop playsinline poster="assets/img/travel/sri-lanka-hero-poster.jpg">
           <source src="assets/video/sri-lanka-hero.mp4" type="video/mp4">
+          <img src="assets/img/travel/sri-lanka-hero-poster.jpg" alt="Sri Lanka Hero Background">
         </video>
-        <div class="hero-overlay"></div>
       </div>
 
-      <div class="container position-relative">
-        <div class="row align-items-center">
-          <!-- Hero Text -->
-          <div class="col-lg-7" style="padding-top: 30%; padding-bottom: 30%;">
-            <div class="hero-text" data-aos="fade-up" data-aos-delay="100">
-              <h1 class="hero-title">Crafting Journeys, Creating Memories</h1>
-              <p class="hero-subtitle">
-                Discover the magic of Sri Lanka with Memorra Tours — from golden beaches and misty mountains to ancient
-                temples and thrilling wildlife adventures.
+      <div class="container">
+        <div class="row w-100 justify-content-center align-items-center" style="min-height: 100vh;">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="hero-text text-center shadow rounded-4 p-4 p-md-5" data-aos="fade-up" data-aos-delay="100">
+                <h1 class="hero-title mb-3 fw-bold">
+                <span class="text-primary" style="font-size: 2.5rem;">Memorra Tours</span><br>
+                <p class="fst-italic mb-0" style="font-size: x-small;">Crafting Journeys, Creating Memories</p>
+                </h1>
+              <p class="hero-subtitle lead mb-4">
+                Discover the magic of Sri Lanka with <strong>Memorra Tours</strong> — from golden beaches and misty mountains to ancient temples and thrilling wildlife adventures.
               </p>
-              <div class="hero-buttons">
-                <a href="#featured-destinations" class="btn btn-primary me-3">Start Exploring</a>
-                <a href="#featured-tours" class="btn btn-outline">Browse Tours</a>
+              <div class="hero-buttons d-flex flex-wrap justify-content-center gap-3 mb-3">
+                <a href="#featured-destinations" class="btn btn-primary btn-lg px-4">
+                  <i class="bi bi-compass me-2"></i>Start Exploring
+                </a>
+                <a href="#featured-tours" class="btn btn-outline-light btn-lg px-4">
+                  <i class="bi bi-map me-2"></i>Browse Tours
+                </a>
               </div>
             </div>
           </div>
-
-          <!-- Booking Form -->
-          <!-- <div class="col-lg-5">
-        <div class="booking-form-wrapper" data-aos="fade-left" data-aos-delay="200">
-          <div class="booking-form">
-            <h3 class="form-title">Plan Your Adventure</h3>
-            <form action="https://wa.me/94777402140" method="post">
-              
-              <div class="form-group mb-3">
-                <label for="destination">Destination</label>
-                <select name="destination" id="destination" class="form-select" required>
-                  <option value="">Choose your destination</option>
-                  <option value="beaches">Tropical Beaches</option>
-                  <option value="hill-country">Hill Country</option>
-                  <option value="cultural">Cultural Triangle</option>
-                  <option value="wildlife">Wildlife Safari</option>
-                  <option value="custom">Custom Tour</option>
-                </select>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group mb-3">
-                    <label for="checkin">Departure Date</label>
-                    <input type="date" name="checkin" id="checkin" class="form-control" required>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group mb-3">
-                    <label for="checkout">Return Date</label>
-                    <input type="date" name="checkout" id="checkout" class="form-control" required>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group mb-3">
-                    <label for="adults">Adults</label>
-                    <select name="adults" id="adults" class="form-select" required>
-                      <option value="1">1 Adult</option>
-                      <option value="2">2 Adults</option>
-                      <option value="3">3 Adults</option>
-                      <option value="4+">4+ Adults</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group mb-3">
-                    <label for="children">Children</label>
-                    <select name="children" id="children" class="form-select">
-                      <option value="0">No Children</option>
-                      <option value="1">1 Child</option>
-                      <option value="2">2 Children</option>
-                      <option value="3+">3+ Children</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-group mb-3">
-                <label for="tour-type">Tour Type</label>
-                <select name="tour_type" id="tour-type" class="form-select" required>
-                  <option value="">Select tour type</option>
-                  <option value="adventure">Adventure</option>
-                  <option value="cultural">Cultural</option>
-                  <option value="relaxation">Relaxation</option>
-                  <option value="family">Family</option>
-                  <option value="luxury">Luxury</option>
-                  <option value="honeymoon">Honeymoon</option>
-                </select>
-              </div>
-
-              <button type="submit" class="btn btn-primary w-100">Find Your Perfect Trip</button>
-            </form>
-          </div>
-        </div>
-      </div> -->
         </div>
       </div>
 
+      <!-- Scroll Down Indicator -->
+      <div class="scroll-down-indicator">
+        <a href="#why-us" class="scroll-down-link text-decoration-none d-flex flex-column align-items-center">
+          <span class="scroll-text small mb-1">Scroll Down</span>
+          <i class="bi bi-chevron-double-down fs-2 animate__animated animate__bounce animate__infinite"></i>
+        </a>
+      </div>
     </section>
     <!-- /Travel Hero Section -->
 
@@ -1247,7 +1180,7 @@
           </div>
 
           <div class="visual-element">
-            <img src="assets/img/travel/showcase.jpg" alt="Sri Lanka Travel Adventure" class="hero-image"
+            <img src="assets/img/Memorra logo.jpg" alt="Sri Lanka Travel Adventure" class="hero-image"
               loading="lazy">
             <div class="image-overlay">
               <div class="stat-item">
