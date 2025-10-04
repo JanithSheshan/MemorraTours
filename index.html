@@ -4,31 +4,31 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Memorra Tours | Crafting Journeys, Creating Memories</title>
+  <title>Memorra Tours | Sri Lanka Travel Packages, Holidays & Tours</title>
+
+  <!-- Primary Meta -->
   <meta name="description"
-    content="Memorra Tours offers curated travel experiences across Sri Lanka — from pristine beaches to cultural wonders. Explore the island with trusted local guides.">
+    content="Book unforgettable Sri Lanka tours with Memorra Tours. Explore beaches, wildlife safaris, cultural heritage, adventure travel & holiday packages with trusted local experts.">
   <meta name="keywords"
-    content="Memorra Tours, Sri Lanka travel, tours Sri Lanka, holiday packages, cultural tours, wildlife tours, south Asia travel, adventure Sri Lanka">
+    content="Sri Lanka tours, Sri Lanka travel, holiday packages Sri Lanka, cultural tours, wildlife tours, adventure Sri Lanka, best Sri Lanka travel agency, Sri Lanka honeymoon, Sri Lanka family tours, Sri Lanka travel packages, south Asia tours, travel agency Sri Lanka">
   <meta name="author" content="Memorra Tours">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Memorra Tours | Crafting Journeys, Creating Memories">
+  <meta property="og:title" content="Memorra Tours | Sri Lanka Travel Packages & Tours">
   <meta property="og:description"
-    content="Discover Sri Lanka with Memorra Tours. Your trusted partner for adventure, culture, nature, and unforgettable experiences.">
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/JanithSheshan/MemorraTours/refs/heads/main/assets/img/memorra-logo.png">
+    content="Discover Sri Lanka with Memorra Tours. From golden beaches to cultural wonders — customized holidays, guided tours & adventure trips.">
+  <meta property="og:image" content="https://memorratours.com/assets/img/memorra-logo.png">
   <meta property="og:url" content="https://memorratours.com/">
   <meta property="og:site_name" content="Memorra Tours">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Memorra Tours | Sri Lanka’s Trusted Travel Partner">
+  <meta name="twitter:title" content="Memorra Tours | Sri Lanka's Trusted Travel Partner">
   <meta name="twitter:description"
-    content="Explore paradise with customized tours across Sri Lanka. Experience the best of nature, heritage, and hospitality.">
-  <meta name="twitter:image"
-    content="https://raw.githubusercontent.com/JanithSheshan/MemorraTours/refs/heads/main/assets/img/memorra-logo.png">
+    content="Plan your perfect Sri Lanka holiday with Memorra Tours. Beaches, wildlife safaris, cultural tours, adventures & customized travel packages.">
+  <meta name="twitter:image" content="https://memorratours.com/assets/img/memorra-logo.png">
   <meta name="twitter:site" content="@memorratours">
   <meta name="twitter:creator" content="@memorratours">
 
@@ -56,7 +56,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Structured Data -->
+  <!-- Structured Data (Rich Snippets) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,21 +64,134 @@
     "name": "Memorra Tours",
     "url": "https://memorratours.com",
     "logo": "https://memorratours.com/assets/img/logo.png",
-    "description": "Memorra Tours is a premium travel company in Sri Lanka offering bespoke cultural, adventure and wildlife tours.",
+    "description": "Memorra Tours is a premium Sri Lanka travel company offering bespoke holiday packages, cultural tours, adventure trips, and wildlife safaris.",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+94-77-123-4567",
       "contactType": "Customer Support",
       "email": "info@memorratours.com"
     },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Colombo, Sri Lanka",
+      "addressCountry": "LK"
+    },
     "sameAs": [
       "https://www.facebook.com/memorratours",
-      "https://www.instagram.com/memorratours.sl"
-    ]
+      "https://www.instagram.com/memorratours.sl",
+      "https://www.tripadvisor.com/Profile/memorratours"
+    ],
+    "offers": {
+      "@type": "OfferCatalog",
+      "name": "Sri Lanka Tour Packages",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "TouristTrip",
+            "name": "Sri Lanka Cultural Tour",
+            "description": "Explore ancient cities, temples, and heritage sites of Sri Lanka."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "TouristTrip",
+            "name": "Sri Lanka Wildlife Safari",
+            "description": "Experience wildlife in Yala, Udawalawe, and Wilpattu National Parks."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "TouristTrip",
+            "name": "Sri Lanka Beach Holiday",
+            "description": "Relax on the pristine beaches of Sri Lanka with water sports and sunsets."
+          }
+        }
+      ]
+    }
   }
   </script>
-</head>
 
+  <style>
+    /* Gradient text for main title */
+    .gradient-text {
+      background: linear-gradient(90deg, #ffd700, #1e5c6e 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    
+    /* Typewriter animation for subtitle */
+    .typewriter {
+      display: inline-block;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid #ffd700;
+      animation: typing 2.5s steps(32, end), blink-caret 0.7s step-end infinite;
+    }
+    
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    
+    @keyframes blink-caret {
+      0%, 100% { border-color: #ffd700; }
+      50% { border-color: transparent; }
+    }
+    
+    /* Button styles for main page */
+    .explore-btn {
+      background: linear-gradient(135deg, #1e5c6e 0%, #7cc5e6 100%);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+    
+    .explore-btn:hover {
+      background: linear-gradient(135deg, #0a232a 0%, #ffd700 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(30, 92, 110, 0.3);
+      color: white;
+    }
+    
+    .quick-link {
+      background: transparent;
+      color: #1e5c6e;
+      border: none;
+      padding: 8px 0;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    .quick-link:hover {
+      color: #0a232a;
+      transform: translateX(5px);
+    }
+    
+    .swiper-slide-bg {
+      background-color: rgb(10, 35, 42);
+    }
+  </style>
+
+</head>
 
 <body class="index-page">
 
@@ -119,7 +232,6 @@
     </div>
   </header>
 
-
   <main class="main">
 
     <!-- Travel Hero Section -->
@@ -131,28 +243,18 @@
         </video>
       </div>
 
-      <div class="container">
-        <div class="row w-100 justify-content-center align-items-center" style="min-height: 100vh;">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="hero-text text-center shadow rounded-4 p-4 p-md-5" data-aos="fade-up" data-aos-delay="100">
-                <h1 class="hero-title mb-3 fw-bold">
-                <span class="text-primary" style="font-size: 2.5rem;">Memorra Tours</span><br>
-                <p class="fst-italic mb-0" style="font-size: x-small;">Crafting Journeys, Creating Memories</p>
-                </h1>
-              <p class="hero-subtitle lead mb-4">
-                Discover the magic of Sri Lanka with <strong>Memorra Tours</strong> — from golden beaches and misty mountains to ancient temples and thrilling wildlife adventures.
-              </p>
-              <div class="hero-buttons d-flex flex-wrap justify-content-center gap-3 mb-3">
-                <a href="#featured-destinations" class="btn btn-primary btn-lg px-4">
-                  <i class="bi bi-compass me-2"></i>Start Exploring
-                </a>
-                <a href="#featured-tours" class="btn btn-outline-light btn-lg px-4">
-                  <i class="bi bi-map me-2"></i>Browse Tours
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- Center Large Moving Text (Improved Font & Animation) -->
+      <div class="hero-title-container position-absolute top-50 start-50 translate-middle text-center w-100" style="z-index:2;">
+        <h1 class="display-2 fw-bold text-white animate__animated animate__fadeInDown" style="font-family:'Poppins', 'Raleway', sans-serif; text-shadow:0 4px 24px rgba(0,0,0,0.5); letter-spacing:2px;">
+          <span class="d-block animate__animated animate__fadeInLeft animate__delay-0_5s" style="font-family:'Raleway',sans-serif; font-weight:700; font-size:clamp(2.5rem,7vw,5rem); letter-spacing:3px;">
+            <span class="gradient-text">
+              Memorra Tours
+            </span>
+          </span>
+          <span class="hero-subtitle d-block fs-2 fw-light animate__animated animate__fadeInUp animate__delay-1s" style="font-family:'Roboto',sans-serif; letter-spacing:4px; color:#fff; text-shadow:0 2px 12px rgba(30,92,110,0.3);">
+            <span class="typewriter">Crafting Journeys, Creating Memories.</span>
+          </span>
+        </h1>
       </div>
 
       <!-- Scroll Down Indicator -->
@@ -165,10 +267,8 @@
     </section>
     <!-- /Travel Hero Section -->
 
-
     <!-- Why Us Section -->
     <section id="why-us" class="why-us section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <!-- About Us Content -->
@@ -177,8 +277,8 @@
             <div class="content">
               <h3>Discover Sri Lanka with Confidence</h3>
               <p>
-                At <strong>Memorra Tours</strong>, we believe travel is more than sightseeing — it’s about crafting
-                stories you’ll cherish forever.
+                At <strong>Memorra Tours</strong>, we believe travel is more than sightseeing — it's about crafting
+                stories you'll cherish forever.
                 From breathtaking landscapes to vibrant culture, we design journeys that capture the soul of Sri Lanka.
               </p>
               <p>
@@ -216,6 +316,134 @@
           </div>
         </div><!-- End About Us Content -->
 
+        <!-- Featured Destinations Section -->
+        <section id="featured-destinations" class="featured-destinations section">
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <h2>Featured Destinations</h2>
+            <div><span>Discover Our</span> <span class="description-title">Top Sri Lanka Experiences</span></div>
+          </div><!-- End Section Title -->
+
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row">
+
+              <!-- Main Destination -->
+              <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="featured-destination">
+                  <div class="destination-overlay">
+                    <img src="assets/img/travel/sri-lanka-beach.jpg" alt="Tropical Beaches Sri Lanka" class="img-fluid">
+                    <div class="destination-info">
+                      <span class="destination-tag">Popular Choice</span>
+                      <h3>Tropical Beaches</h3>
+                      <p class="location"><i class="bi bi-geo-alt-fill"></i> Mirissa, Unawatuna & Trincomalee</p>
+                      <p class="description">Golden sands, turquoise waters, and palm-fringed coastlines — Sri Lanka's
+                        beaches are perfect for relaxation, surfing, and sunsets.</p>
+                      <div class="destination-meta">
+                        <div class="tours-count">
+                          <i class="bi bi-collection"></i>
+                          <span>18 Packages</span>
+                        </div>
+                        <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <span>4.9 (520)</span>
+                        </div>
+                      </div>
+                      <a href="#" class="explore-btn" style="display: inline;">
+                        <span>More Details</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Main Destination -->
+
+              <div class="col-lg-6">
+                <div class="row g-3">
+
+                  <!-- Hill Country -->
+                  <div class="col-12" data-aos="fade-left" data-aos-delay="300">
+                    <div class="compact-destination">
+                      <div class="destination-image">
+                        <img src="assets/img/travel/sri-lanka-hillcountry.jpg" alt="Sri Lanka Hill Country"
+                          class="img-fluid">
+                        <div class="badge-offer">Best Value</div>
+                      </div>
+                      <div class="destination-details">
+                        <h4>Hill Country Escape</h4>
+                        <p class="location"><i class="bi bi-geo-alt"></i> Nuwara Eliya, Ella, Haputale</p>
+                        <p style="font-size: x-small; margin-bottom: 0;">Tea plantations, waterfalls, and misty mountains offer a peaceful retreat in Sri Lanka's highlands.</p>
+                        <div class="stats-row" style="margin-top: 4px;">
+                          <span class="tour-count"><i class="bi bi-calendar-check"></i> 12 Tours</span>
+                          <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
+                        </div>
+                        <a href="#" class="quick-link">
+                          More Details <i class="bi bi-chevron-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Hill Country -->
+
+                  <!-- Cultural Triangle -->
+                  <div class="col-12" data-aos="fade-left" data-aos-delay="400">
+                    <div class="compact-destination">
+                      <div class="destination-image">
+                        <img src="assets/img/travel/sri-lanka-cultural.jpg" alt="Sri Lanka Cultural Triangle"
+                          class="img-fluid">
+                      </div>
+                      <div class="destination-details">
+                        <h4>Cultural Heritage Trail</h4>
+                        <p class="location"><i class="bi bi-geo-alt"></i> Sigiriya, Polonnaruwa, Anuradhapura</p>
+                        <p style="font-size: x-small; margin-bottom: 0;">Explore ancient cities, iconic rock fortresses, and sacred temples in Sri Lanka's
+                          Cultural Triangle.</p>
+                        <div class="stats-row" style="margin-top: 4px;">
+                          <span class="tour-count"><i class="bi bi-calendar-check"></i> 10 Tours</span>
+                          <span class="rating"><i class="bi bi-star-fill"></i> 4.7</span>
+                        </div>
+                        <a href="#" class="quick-link">
+                          More Details <i class="bi bi-chevron-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Cultural -->
+
+                  <!-- Safari -->
+                  <div class="col-12" data-aos="fade-left" data-aos-delay="500">
+                    <div class="compact-destination">
+                      <div class="destination-image">
+                        <img src="assets/img/travel/sri-lanka-safari.jpg" alt="Sri Lanka Safari Experience"
+                          class="img-fluid">
+                        <div class="badge-offer limited">Limited Spots</div>
+                      </div>
+                      <div class="destination-details">
+                        <h4>Wildlife Safari</h4>
+                        <p class="location"><i class="bi bi-geo-alt"></i> Yala & Wilpattu National Parks</p>
+                        <p style="font-size: x-small; margin-bottom: 0;">Encounter elephants, leopards, and exotic birds in Sri Lanka's most breathtaking
+                          wildlife reserves.</p>
+                        <div class="stats-row" style="margin-top: 4px;">
+                          <span class="tour-count"><i class="bi bi-calendar-check"></i> 8 Safaris</span>
+                          <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
+                        </div>
+                        <a href="#" class="quick-link">
+                          More Details <i class="bi bi-chevron-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Safari -->
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+        <!-- /Featured Destinations Section -->
+
         <!-- Why Choose Us -->
         <div class="why-choose-section">
           <div class="row justify-content-center">
@@ -232,7 +460,7 @@
                   <i class="bi bi-people-fill"></i>
                 </div>
                 <h4>Local Expertise</h4>
-                <p>Our guides are passionate locals who know Sri Lanka’s hidden gems, traditions, and culture inside
+                <p>Our guides are passionate locals who know Sri Lanka's hidden gems, traditions, and culture inside
                   out.</p>
               </div>
             </div>
@@ -283,7 +511,7 @@
                   <i class="bi bi-star-fill"></i>
                 </div>
                 <h4>Unforgettable Memories</h4>
-                <p>Every trip is designed to be more than travel — it’s about creating stories worth keeping.</p>
+                <p>Every trip is designed to be more than travel — it's about creating stories worth keeping.</p>
               </div>
             </div>
           </div><!-- End Features Grid -->
@@ -293,143 +521,6 @@
 
     </section>
     <!-- /Why Us Section -->
-
-
-    <!-- Featured Destinations Section -->
-    <section id="featured-destinations" class="featured-destinations section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Featured Destinations</h2>
-        <div><span>Discover Our</span> <span class="description-title">Top Sri Lanka Experiences</span></div>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-
-          <!-- Main Destination -->
-          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="featured-destination">
-              <div class="destination-overlay">
-                <img src="assets/img/travel/sri-lanka-beach.jpg" alt="Tropical Beaches Sri Lanka" class="img-fluid">
-                <div class="destination-info">
-                  <span class="destination-tag">Popular Choice</span>
-                  <h3>Tropical Beaches</h3>
-                  <p class="location"><i class="bi bi-geo-alt-fill"></i> Mirissa, Unawatuna & Trincomalee</p>
-                  <p class="description">Golden sands, turquoise waters, and palm-fringed coastlines — Sri Lanka’s
-                    beaches are perfect for relaxation, surfing, and sunsets.</p>
-                  <div class="destination-meta">
-                    <div class="tours-count">
-                      <i class="bi bi-collection"></i>
-                      <span>18 Packages</span>
-                    </div>
-                    <div class="rating">
-                      <i class="bi bi-star-fill"></i>
-                      <span>4.9 (520)</span>
-                    </div>
-                  </div>
-                  <div class="price-info">
-                    <span class="starting-from">Starting from</span>
-                    <span class="amount">$850</span>
-                  </div>
-                  <a href="https://wa.me/94777402140" class="explore-btn">
-                    <span>Whatsapp Now</span>
-                    <i class="bi bi-whatsapp"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Main Destination -->
-
-          <div class="col-lg-6">
-            <div class="row g-3">
-
-              <!-- Hill Country -->
-              <div class="col-12" data-aos="fade-left" data-aos-delay="300">
-                <div class="compact-destination">
-                  <div class="destination-image">
-                    <img src="assets/img/travel/sri-lanka-hillcountry.jpg" alt="Sri Lanka Hill Country"
-                      class="img-fluid">
-                    <div class="badge-offer">Best Value</div>
-                  </div>
-                  <div class="destination-details">
-                    <h4>Hill Country Escape</h4>
-                    <p class="location"><i class="bi bi-geo-alt"></i> Nuwara Eliya, Ella, Haputale</p>
-                    <p class="brief">Tea plantations, waterfalls, and misty mountains offer a peaceful retreat in Sri
-                      Lanka’s highlands.</p>
-                    <div class="stats-row">
-                      <span class="tour-count"><i class="bi bi-calendar-check"></i> 12 Tours</span>
-                      <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
-                      <span class="price">from $920</span>
-                    </div>
-                    <a href="https://wa.me/94777402140" class="quick-link">Contact for Details <i
-                        class="bi bi-chevron-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Hill Country -->
-
-              <!-- Cultural Triangle -->
-              <div class="col-12" data-aos="fade-left" data-aos-delay="400">
-                <div class="compact-destination">
-                  <div class="destination-image">
-                    <img src="assets/img/travel/sri-lanka-cultural.jpg" alt="Sri Lanka Cultural Triangle"
-                      class="img-fluid">
-                  </div>
-                  <div class="destination-details">
-                    <h4>Cultural Heritage Trail</h4>
-                    <p class="location"><i class="bi bi-geo-alt"></i> Sigiriya, Polonnaruwa, Anuradhapura</p>
-                    <p class="brief">Explore ancient cities, iconic rock fortresses, and sacred temples in Sri Lanka’s
-                      Cultural Triangle.</p>
-                    <div class="stats-row">
-                      <span class="tour-count"><i class="bi bi-calendar-check"></i> 10 Tours</span>
-                      <span class="rating"><i class="bi bi-star-fill"></i> 4.7</span>
-                      <span class="price">from $780</span>
-                    </div>
-                    <a href="https://wa.me/94777402140" class="quick-link">Contact for Details <i
-                        class="bi bi-chevron-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Cultural -->
-
-              <!-- Safari -->
-              <div class="col-12" data-aos="fade-left" data-aos-delay="500">
-                <div class="compact-destination">
-                  <div class="destination-image">
-                    <img src="assets/img/travel/sri-lanka-safari.jpg" alt="Sri Lanka Safari Experience"
-                      class="img-fluid">
-                    <div class="badge-offer limited">Limited Spots</div>
-                  </div>
-                  <div class="destination-details">
-                    <h4>Wildlife Safari</h4>
-                    <p class="location"><i class="bi bi-geo-alt"></i> Yala & Wilpattu National Parks</p>
-                    <p class="brief">Encounter elephants, leopards, and exotic birds in Sri Lanka’s most breathtaking
-                      wildlife reserves.</p>
-                    <div class="stats-row">
-                      <span class="tour-count"><i class="bi bi-calendar-check"></i> 8 Safaris</span>
-                      <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
-                      <span class="price">from $1,150</span>
-                    </div>
-                    <a href="https://wa.me/94777402140" class="quick-link">Contact for Details <i
-                        class="bi bi-chevron-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Safari -->
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-    <!-- /Featured Destinations Section -->
-
 
     <!-- Featured Tours Section -->
     <section id="featured-tours" class="featured-tours section">
@@ -451,7 +542,6 @@
                 <img src="assets/img/travel/tour-srilanka-beach.jpg" alt="Sri Lanka Beach Escape" class="img-fluid"
                   loading="lazy">
                 <div class="tour-badge">Top Rated</div>
-                <div class="tour-price">$950</div>
               </div>
               <div class="tour-content">
                 <h4>Sri Lanka Beach Escape</h4>
@@ -487,7 +577,6 @@
                 <img src="assets/img/travel/tour-srilanka-cultural.jpg" alt="Cultural Triangle Tour" class="img-fluid"
                   loading="lazy">
                 <div class="tour-badge limited">Only 5 Spots!</div>
-                <div class="tour-price">$1,150</div>
               </div>
               <div class="tour-content">
                 <h4>Cultural Triangle Tour</h4>
@@ -523,7 +612,6 @@
                 <img src="assets/img/travel/tour-srilanka-safari.jpg" alt="Sri Lanka Safari" class="img-fluid"
                   loading="lazy">
                 <div class="tour-badge new">Newly Added</div>
-                <div class="tour-price">$1,280</div>
               </div>
               <div class="tour-content">
                 <h4>Sri Lanka Safari Adventure</h4>
@@ -560,7 +648,6 @@
                 <img src="assets/img/travel/tour-srilanka-hill.jpg" alt="Hill Country Journey" class="img-fluid"
                   loading="lazy">
                 <div class="tour-badge">Popular Choice</div>
-                <div class="tour-price">$1,050</div>
               </div>
               <div class="tour-content">
                 <h4>Hill Country Journey</h4>
@@ -597,7 +684,6 @@
                 <img src="assets/img/travel/tour-srilanka-south.jpg" alt="Southern Explorer" class="img-fluid"
                   loading="lazy">
                 <div class="tour-badge cultural">Eco-Friendly</div>
-                <div class="tour-price">$1,200</div>
               </div>
               <div class="tour-content">
                 <h4>Southern Explorer</h4>
@@ -633,7 +719,6 @@
                 <img src="assets/img/travel/tour-srilanka-north.jpg" alt="Northern Discovery" class="img-fluid"
                   loading="lazy">
                 <div class="tour-badge adventure">Adventure Seekers</div>
-                <div class="tour-price">$1,350</div>
               </div>
               <div class="tour-content">
                 <h4>Northern Discovery</h4>
@@ -727,8 +812,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.webp">
-                      <img src="assets/img/gallery/gallery-3.webp" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg">
+                      <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -739,8 +824,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.webp">
-                      <img src="assets/img/gallery/gallery-1.webp" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg">
+                      <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -751,8 +836,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.webp">
-                      <img src="assets/img/gallery/gallery-5.webp" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg">
+                      <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -763,8 +848,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.webp">
-                      <img src="assets/img/gallery/gallery-7.webp" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg">
+                      <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -775,8 +860,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.webp">
-                      <img src="assets/img/gallery/gallery-2.webp" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg">
+                      <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -787,8 +872,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.webp">
-                      <img src="assets/img/gallery/gallery-4.webp" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg">
+                      <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -799,8 +884,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.webp">
-                      <img src="assets/img/gallery/gallery-6.webp" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg">
+                      <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -811,8 +896,8 @@
               <div class="swiper-slide">
                 <div class="gallery-item">
                   <div class="gallery-img">
-                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.webp">
-                      <img src="assets/img/gallery/gallery-8.webp" class="img-fluid" alt="">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg">
+                      <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt="">
                       <div class="gallery-overlay">
                         <i class="bi bi-plus-circle"></i>
                       </div>
@@ -849,13 +934,13 @@
             <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-nature">
               <div class="gallery-card">
                 <div class="gallery-image">
-                  <img src="assets/img/gallery/gallery-1.webp" class="img-fluid" alt="">
+                  <img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
                   <h4>Natural Beauty</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                   <div class="gallery-actions">
-                    <a href="assets/img/gallery/gallery-1.webp" title="View Image" class="glightbox"><i
+                    <a href="assets/img/gallery/gallery-1.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
                     <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
                   </div>
@@ -866,13 +951,13 @@
             <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-architecture">
               <div class="gallery-card">
                 <div class="gallery-image">
-                  <img src="assets/img/gallery/gallery-2.webp" class="img-fluid" alt="">
+                  <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
                   <h4>Urban Landscape</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                   <div class="gallery-actions">
-                    <a href="assets/img/gallery/gallery-2.webp" title="View Image" class="glightbox"><i
+                    <a href="assets/img/gallery/gallery-2.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
                     <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
                   </div>
@@ -883,13 +968,13 @@
             <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-people">
               <div class="gallery-card">
                 <div class="gallery-image">
-                  <img src="assets/img/gallery/gallery-3.webp" class="img-fluid" alt="">
+                  <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
                   <h4>Candid Moments</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                   <div class="gallery-actions">
-                    <a href="assets/img/gallery/gallery-3.webp" title="View Image" class="glightbox"><i
+                    <a href="assets/img/gallery/gallery-3.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
                     <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
                   </div>
@@ -900,13 +985,13 @@
             <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-nature">
               <div class="gallery-card">
                 <div class="gallery-image">
-                  <img src="assets/img/gallery/gallery-4.webp" class="img-fluid" alt="">
+                  <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
                   <h4>Wilderness</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                   <div class="gallery-actions">
-                    <a href="assets/img/gallery/gallery-4.webp" title="View Image" class="glightbox"><i
+                    <a href="assets/img/gallery/gallery-4.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
                     <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
                   </div>
@@ -917,13 +1002,13 @@
             <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-architecture">
               <div class="gallery-card">
                 <div class="gallery-image">
-                  <img src="assets/img/gallery/gallery-5.webp" class="img-fluid" alt="">
+                  <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
                   <h4>Modern Design</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                   <div class="gallery-actions">
-                    <a href="assets/img/gallery/gallery-5.webp" title="View Image" class="glightbox"><i
+                    <a href="assets/img/gallery/gallery-5.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
                     <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
                   </div>
@@ -934,13 +1019,13 @@
             <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-people">
               <div class="gallery-card">
                 <div class="gallery-image">
-                  <img src="assets/img/gallery/gallery-6.webp" class="img-fluid" alt="">
+                  <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
                   <h4>Portrait Studies</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                   <div class="gallery-actions">
-                    <a href="assets/img/gallery/gallery-6.webp" title="View Image" class="glightbox"><i
+                    <a href="assets/img/gallery/gallery-6.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
                     <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
                   </div>
@@ -951,13 +1036,13 @@
             <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-nature">
               <div class="gallery-card">
                 <div class="gallery-image">
-                  <img src="assets/img/gallery/gallery-7.webp" class="img-fluid" alt="">
+                  <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
                   <h4>Serene Waters</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                   <div class="gallery-actions">
-                    <a href="assets/img/gallery/gallery-7.webp" title="View Image" class="glightbox"><i
+                    <a href="assets/img/gallery/gallery-7.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
                     <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
                   </div>
@@ -968,13 +1053,13 @@
             <div class="col-xl-3 col-md-4 col-sm-6 gallery-item isotope-item filter-architecture">
               <div class="gallery-card">
                 <div class="gallery-image">
-                  <img src="assets/img/gallery/gallery-8.webp" class="img-fluid" alt="">
+                  <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
                   <h4>Historical Places</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                   <div class="gallery-actions">
-                    <a href="assets/img/gallery/gallery-8.webp" title="View Image" class="glightbox"><i
+                    <a href="assets/img/gallery/gallery-8.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
                     <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
                   </div>
@@ -1002,38 +1087,32 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <script type="application/json" class="swiper-config">
-      {
-        "loop": true,
-        "speed": 600,
-        "autoplay": {
-          "delay": 3500,
-          "disableOnInteraction": false
-        },
-        "slidesPerView": 1,
-        "spaceBetween": 24,
-        "pagination": {
-          "el": ".swiper-pagination",
-          "type": "bullets",
-          "clickable": true
-        },
-        "breakpoints": {
-          "576": {
-            "slidesPerView": 2,
-            "spaceBetween": 24
-          },
-          "992": {
-            "slidesPerView": 3,
-            "spaceBetween": 24
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 3500,
+              "disableOnInteraction": false
+            },
+            "slidesPerView": 1,
+            "spaceBetween": 24,
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            },
+            "breakpoints": {
+              "576": {
+                "slidesPerView": 2,
+                "spaceBetween": 24
+              },
+              "992": {
+                "slidesPerView": 3,
+                "spaceBetween": 24
+              }
+            }
           }
-        }
-      }
-    </script>
-
-        <style>
-          .swiper-slide-bg {
-            background-color: rgb(10, 35, 42);
-          }
-        </style>
+        </script>
 
         <div class="swiper init-swiper">
           <div class="swiper-wrapper">
@@ -1180,7 +1259,7 @@
           </div>
 
           <div class="visual-element">
-            <img src="assets/img/Memorra logo.jpg" alt="Sri Lanka Travel Adventure" class="hero-image"
+            <img src="assets/img/travel/showcase.jpg" alt="Sri Lanka Travel Adventure" class="hero-image"
               loading="lazy">
             <div class="image-overlay">
               <div class="stat-item">
@@ -1226,7 +1305,7 @@
         <div class="benefits-showcase" data-aos="fade-up" data-aos-delay="400">
           <div class="benefits-header">
             <h3>Why Travel With Memorra Tours?</h3>
-            <p>We’re locals who know Sri Lanka best — crafting journeys that leave lasting memories.</p>
+            <p>We're locals who know Sri Lanka best — crafting journeys that leave lasting memories.</p>
           </div>
 
           <div class="benefits-grid">
@@ -1252,7 +1331,7 @@
               </div>
               <div class="benefit-content">
                 <h4>Trusted by Travelers</h4>
-                <p>5-star reviews and recognition as one of Sri Lanka’s top local tour experts.</p>
+                <p>5-star reviews and recognition as one of Sri Lanka's top local tour experts.</p>
               </div>
             </div>
 
@@ -1275,7 +1354,6 @@
 
     </section>
     <!-- /Call To Action Section -->
-
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -1327,7 +1405,7 @@
       <!-- Google Maps (Sri Lanka Office Location) -->
       <div class="map-section" data-aos="fade-up" data-aos-delay="200">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31743.012746021257!2d80.23375474723136!3d6.011677944334888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae172f162bf926d%3A0xc0444c5e8377446c!2sUnawatuna!5e0!3m2!1sen!2slk!4v1755947750570!5m2!1sen!2slk"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4047240.5968053406!2d78.0631109837925!3d7.854882768514259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri%20Lanka!5e0!3m2!1sen!2slk!4v1759566399080!5m2!1sen!2slk"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -1398,7 +1476,6 @@
     </section>
     <!-- /Contact Section -->
 
-
   </main>
 
   <footer id="footer" class="footer position-relative dark-background">
@@ -1418,7 +1495,7 @@
               </div>
               <div class="loading">Loading...</div>
               <div class="error-message"></div>
-              <div class="sent-message">🎉 Thank you! You’ve joined Memorra Tours newsletter.</div>
+              <div class="sent-message">🎉 Thank you! You've joined Memorra Tours newsletter.</div>
             </form>
           </div>
         </div>
@@ -1493,7 +1570,6 @@
 
   </footer>
 
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -1514,68 +1590,70 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Find the swiper config JSON
-      var configScript = document.querySelector('.swiper-config');
-      var config = {};
+    // Clean JavaScript to ensure modals work properly
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize Bootstrap components
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+      
+      // Initialize Swiper if needed
+      const configScript = document.querySelector('.swiper-config');
       if (configScript) {
         try {
-          config = JSON.parse(configScript.textContent);
+          const config = JSON.parse(configScript.textContent);
+          new Swiper('.init-swiper', config);
         } catch (e) {
-          config = {};
+          console.error('Error parsing Swiper config:', e);
         }
       }
-      // Initialize Swiper for testimonials
-      var testimonialSwiper = new Swiper('.init-swiper', config);
-    });
+      
+      // Social icons visibility
+      const socialIcons = document.getElementById("floating-social-icons");
+      let scrollTimeout;
 
-    const socialIcons = document.getElementById("floating-social-icons");
-    let scrollTimeout;
+      function showIcons() {
+        socialIcons.classList.remove("hidden");
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          socialIcons.classList.add("hidden");
+        }, 1000);
+      }
 
-    function showIcons() {
-      socialIcons.classList.remove("hidden");
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        socialIcons.classList.add("hidden");
-      }, 1000); // Hide after 1 seconds of no scroll
-    }
-
-    // Show icons while scrolling
-    window.addEventListener("scroll", showIcons);
-
-    // Also trigger once on load
-    showIcons();
+      window.addEventListener("scroll", showIcons);
+      showIcons();
 
       // Scrollspy for nav active class
-      document.addEventListener("DOMContentLoaded", function () {
-        const navLinks = document.querySelectorAll('#navmenu .nav-link');
-        const sections = Array.from(navLinks).map(link => document.querySelector(link.getAttribute('href')));
-        function onScroll() {
-          let scrollPos = window.scrollY + 120; // header offset
-          let found = false;
-          for (let i = sections.length - 1; i >= 0; i--) {
-            if (sections[i] && sections[i].offsetTop <= scrollPos) {
-              navLinks.forEach(l => l.classList.remove('active'));
-              navLinks[i].classList.add('active');
-              found = true;
-              break;
-            }
-          }
-          if (!found) navLinks.forEach(l => l.classList.remove('active'));
-        }
-        window.addEventListener('scroll', onScroll, { passive: true });
-        // Click: set active immediately
-        navLinks.forEach((link, idx) => {
-          link.addEventListener('click', function () {
+      const navLinks = document.querySelectorAll('#navmenu .nav-link');
+      const sections = Array.from(navLinks).map(link => document.querySelector(link.getAttribute('href')));
+      
+      function onScroll() {
+        let scrollPos = window.scrollY + 120;
+        let found = false;
+        for (let i = sections.length - 1; i >= 0; i--) {
+          if (sections[i] && sections[i].offsetTop <= scrollPos) {
             navLinks.forEach(l => l.classList.remove('active'));
-            this.classList.add('active');
-          });
+            navLinks[i].classList.add('active');
+            found = true;
+            break;
+          }
+        }
+        if (!found) navLinks.forEach(l => l.classList.remove('active'));
+      }
+      
+      window.addEventListener('scroll', onScroll, { passive: true });
+      
+      navLinks.forEach((link, idx) => {
+        link.addEventListener('click', function () {
+          navLinks.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
         });
-        onScroll();
       });
-   
+      
+      onScroll();
+    });
   </script>
 
 </body>
-
 </html>

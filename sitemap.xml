@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://memorratours.com/</loc>
+    <lastmod>2025-09-11</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://memorratours.com/about</loc>
+    <lastmod>2025-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Tour Packages -->
+  <url>
+    <loc>https://memorratours.com/tours</loc>
+    <lastmod>2025-09-11</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Cultural Tours -->
+  <url>
+    <loc>https://memorratours.com/tours/cultural</loc>
+    <lastmod>2025-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Wildlife Safaris -->
+  <url>
+    <loc>https://memorratours.com/tours/wildlife</loc>
+    <lastmod>2025-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Beach Holidays -->
+  <url>
+    <loc>https://memorratours.com/tours/beach</loc>
+    <lastmod>2025-09-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://memorratours.com/blog</loc>
+    <lastmod>2025-09-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://memorratours.com/contact</loc>
+    <lastmod>2025-09-11</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
