@@ -8635,3 +8635,17 @@ section,
   opacity: 0;
   pointer-events: none;
 }
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  .social-media-icons .social-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+    box-shadow: 0 1px 4px rgba(10, 35, 42, 0.10);
+  }
+  #floating-social-icons {
+    bottom: 70px !important;
+    right: 12px !important;
+  }
+}

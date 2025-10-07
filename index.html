@@ -56,64 +56,6 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Structured Data (Rich Snippets) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "Memorra Tours",
-    "url": "https://memorratours.com",
-    "logo": "https://memorratours.com/assets/img/logo.png",
-    "description": "Memorra Tours is a premium Sri Lanka travel company offering bespoke holiday packages, cultural tours, adventure trips, and wildlife safaris.",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+94-77-123-4567",
-      "contactType": "Customer Support",
-      "email": "info@memorratours.com"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Colombo, Sri Lanka",
-      "addressCountry": "LK"
-    },
-    "sameAs": [
-      "https://www.facebook.com/memorratours",
-      "https://www.instagram.com/memorratours.sl",
-      "https://www.tripadvisor.com/Profile/memorratours"
-    ],
-    "offers": {
-      "@type": "OfferCatalog",
-      "name": "Sri Lanka Tour Packages",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "TouristTrip",
-            "name": "Sri Lanka Cultural Tour",
-            "description": "Explore ancient cities, temples, and heritage sites of Sri Lanka."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "TouristTrip",
-            "name": "Sri Lanka Wildlife Safari",
-            "description": "Experience wildlife in Yala, Udawalawe, and Wilpattu National Parks."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "TouristTrip",
-            "name": "Sri Lanka Beach Holiday",
-            "description": "Relax on the pristine beaches of Sri Lanka with water sports and sunsets."
-          }
-        }
-      ]
-    }
-  }
-  </script>
-
   <style>
     /* Gradient text for main title */
     .gradient-text {
@@ -187,6 +129,273 @@
     
     .swiper-slide-bg {
       background-color: rgb(10, 35, 42);
+    }
+
+    /* Modal Styles */
+    .destination-modal .modal-dialog {
+      max-width: 800px;
+    }
+    
+    .destination-modal .modal-content {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .destination-modal .modal-header {
+      background: linear-gradient(135deg, #1e5c6e 0%, #7cc5e6 100%);
+      color: white;
+      border-bottom: none;
+      padding: 1.5rem;
+    }
+    
+    .destination-modal .modal-header .btn-close {
+      filter: invert(1);
+      opacity: 0.8;
+    }
+    
+    .destination-modal .modal-body {
+      padding: 2rem;
+    }
+    
+    .destination-modal .destination-image {
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+    
+    .destination-modal .destination-image img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    
+    .destination-modal .destination-details h4 {
+      color: #1e5c6e;
+      margin-bottom: 1rem;
+    }
+    
+    .destination-modal .destination-details p {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .destination-modal .destination-details li {
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    
+    .destination-modal .destination-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 1.5rem;
+    }
+    
+    .destination-modal .feature-tag {
+      background-color: #f0f8ff;
+      color: #1e5c6e;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    
+    .destination-modal .modal-footer {
+      border-top: 1px solid #eee;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .destination-modal .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .destination-modal .whatsapp-btn:hover {
+      background-color: #128C7E;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+      color: white;
+    }
+    
+    .destination-modal .close-btn {
+      background-color: #f8f9fa;
+      color: #6c757d;
+      border: 1px solid #dee2e6;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .destination-modal .close-btn:hover {
+      background-color: #e9ecef;
+      color: #495057;
+    }
+
+    /* --- Mobile Responsive Styles --- */
+    @media (max-width: 991px) {
+      .hero-title-container h1.display-2 {
+      font-size: 2.2rem !important;
+      }
+      .hero-title-container .hero-subtitle {
+      font-size: 1.1rem !important;
+      }
+      .explore-btn {
+      padding: 10px 18px;
+      font-size: 1rem;
+      }
+      .quick-link {
+      font-size: 0.95rem;
+      }
+      .stats-row {
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-start;
+      }
+      .about-image img {
+      width: 100%;
+      height: auto;
+      }
+      .experience-badge {
+      right: 10px !important;
+      bottom: 10px !important;
+      font-size: 0.9rem;
+      }
+      .benefits-grid {
+      flex-direction: column;
+      gap: 16px;
+      }
+      .benefit-card {
+      width: 100% !important;
+      }
+      .gallery-grid .gallery-item {
+      width: 100% !important;
+      max-width: 100%;
+      }
+      .footer-top .row > div {
+      margin-bottom: 24px;
+      }
+      .footer-newsletter .newsletter-form input[type="email"] {
+      width: 100%;
+      margin-bottom: 8px;
+      }
+      .footer-newsletter .newsletter-form input[type="submit"] {
+      width: 100%;
+      }
+      .social-media-icons {
+      right: 10px !important;
+      bottom: 10px !important;
+      gap: 8px !important;
+      }
+      .swiper-slide-bg {
+      padding: 8px !important;
+      }
+      
+      /* Modal Mobile Styles */
+      .destination-modal .modal-dialog {
+        margin: 20px;
+        max-width: calc(100% - 40px);
+      }
+      
+      .destination-modal .modal-body {
+        padding: 1.5rem;
+      }
+      
+      .destination-modal .modal-footer {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+      }
+      
+      .destination-modal .whatsapp-btn,
+      .destination-modal .close-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .hero-title-container h1.display-2 {
+      font-size: 1.3rem !important;
+      }
+      .hero-title-container .hero-subtitle {
+      font-size: 0.9rem !important;
+      }
+      .explore-btn {
+      padding: 8px 12px;
+      font-size: 0.95rem;
+      }
+      .quick-link {
+      font-size: 0.9rem;
+      }
+      .stats-row {
+      flex-direction: column;
+      gap: 6px;
+      align-items: flex-start;
+      }
+      .about-image img {
+      width: 100%;
+      height: auto;
+      }
+      .experience-badge {
+      font-size: 0.8rem;
+      }
+      .benefits-header h3 {
+      font-size: 1.1rem;
+      }
+      .benefit-card h4 {
+      font-size: 1rem;
+      }
+      .gallery-grid .gallery-item {
+      width: 100% !important;
+      max-width: 100%;
+      }
+      .footer-top .row > div {
+      margin-bottom: 16px;
+      }
+      .footer-newsletter .newsletter-form input[type="email"] {
+      width: 100%;
+      margin-bottom: 6px;
+      }
+      .footer-newsletter .newsletter-form input[type="submit"] {
+      width: 100%;
+      }
+      .social-media-icons {
+      right: 5px !important;
+      bottom: 5px !important;
+      gap: 6px !important;
+      }
+      .swiper-slide-bg {
+      padding: 4px !important;
+      }
+      
+      /* Modal Small Mobile Styles */
+      .destination-modal .modal-dialog {
+        margin: 10px;
+        max-width: calc(100% - 20px);
+      }
+      
+      .destination-modal .modal-body {
+        padding: 1rem;
+      }
+      
+      .destination-modal .modal-header h5 {
+        font-size: 1.1rem;
+      }
     }
   </style>
 
@@ -349,9 +558,9 @@
                           <span>4.9 (520)</span>
                         </div>
                       </div>
-                      <a href="#" class="explore-btn" style="display: inline;">
+                      <button class="explore-btn" data-bs-toggle="modal" data-bs-target="#modal-beach">
                         <span>More Details</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -377,9 +586,9 @@
                           <span class="tour-count"><i class="bi bi-calendar-check"></i> 12 Tours</span>
                           <span class="rating"><i class="bi bi-star-fill"></i> 4.8</span>
                         </div>
-                        <a href="#" class="quick-link">
+                        <button class="quick-link" data-bs-toggle="modal" data-bs-target="#modal-hillcountry">
                           More Details <i class="bi bi-chevron-right"></i>
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -401,9 +610,9 @@
                           <span class="tour-count"><i class="bi bi-calendar-check"></i> 10 Tours</span>
                           <span class="rating"><i class="bi bi-star-fill"></i> 4.7</span>
                         </div>
-                        <a href="#" class="quick-link">
+                        <button class="quick-link" data-bs-toggle="modal" data-bs-target="#modal-cultural">
                           More Details <i class="bi bi-chevron-right"></i>
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -426,9 +635,9 @@
                           <span class="tour-count"><i class="bi bi-calendar-check"></i> 8 Safaris</span>
                           <span class="rating"><i class="bi bi-star-fill"></i> 4.9</span>
                         </div>
-                        <a href="#" class="quick-link">
+                        <button class="quick-link" data-bs-toggle="modal" data-bs-target="#modal-safari">
                           More Details <i class="bi bi-chevron-right"></i>
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -546,7 +755,7 @@
                 <h4>Sri Lanka Beach Escape</h4>
                 <div class="tour-meta">
                   <span class="duration"><i class="bi bi-clock"></i> 7 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 10</span>
+                  <span class="group-size"><i class="bi bi-people"></i> Max 30</span>
                 </div>
                 <p>Relax on golden sands, enjoy whale watching, and experience the sunset in Mirissa & Bentota.</p>
                 <div class="tour-highlights">
@@ -581,7 +790,7 @@
                 <h4>Cultural Triangle Tour</h4>
                 <div class="tour-meta">
                   <span class="duration"><i class="bi bi-clock"></i> 6 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 12</span>
+                  <span class="group-size"><i class="bi bi-people"></i> Max 30</span>
                 </div>
                 <p>Discover ancient kingdoms, climb Sigiriya rock fortress, and explore UNESCO heritage cities.</p>
                 <div class="tour-highlights">
@@ -616,7 +825,7 @@
                 <h4>Sri Lanka Safari Adventure</h4>
                 <div class="tour-meta">
                   <span class="duration"><i class="bi bi-clock"></i> 5 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 8</span>
+                  <span class="group-size"><i class="bi bi-people"></i> Max 30</span>
                 </div>
                 <p>Embark on thrilling jeep safaris in Yala & Udawalawe, spotting elephants, leopards, and wild buffalo.
                 </p>
@@ -652,7 +861,7 @@
                 <h4>Hill Country Journey</h4>
                 <div class="tour-meta">
                   <span class="duration"><i class="bi bi-clock"></i> 6 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 14</span>
+                  <span class="group-size"><i class="bi bi-people"></i> Max 30</span>
                 </div>
                 <p>Ride the scenic train to Ella, visit tea plantations, and enjoy waterfalls & cool mountain breezes.
                 </p>
@@ -688,7 +897,7 @@
                 <h4>Southern Explorer</h4>
                 <div class="tour-meta">
                   <span class="duration"><i class="bi bi-clock"></i> 7 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 12</span>
+                  <span class="group-size"><i class="bi bi-people"></i> Max 30</span>
                 </div>
                 <p>Explore Galle Fort, turtle hatcheries, spice gardens, and the stunning southern beaches.</p>
                 <div class="tour-highlights">
@@ -723,7 +932,7 @@
                 <h4>Northern Discovery</h4>
                 <div class="tour-meta">
                   <span class="duration"><i class="bi bi-clock"></i> 8 Days</span>
-                  <span class="group-size"><i class="bi bi-people"></i> Max 10</span>
+                  <span class="group-size"><i class="bi bi-people"></i> Max 30</span>
                 </div>
                 <p>Discover untouched Jaffna, Delft Island, Hindu temples, and northern beaches rich in culture.</p>
                 <div class="tour-highlights">
@@ -749,7 +958,12 @@
         </div>
 
         <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="500">
-          <a href="tours.html" class="btn-view-all">View All Tours</a>
+          <div class="alert alert-info" role="alert" style="font-size:1.1rem;">
+            <strong>Special Note:</strong> All our tours can be fully customized to match your interests, schedule, and travel style. Just let us know your preferences!
+          </div>
+          <a href="https://wa.me/94777402140?text=Hi%20Memorra%20Tours!%20I%20want%20to%20customize%20a%20tour." class="btn btn-success mt-3" style="font-weight:500;">
+            <i class="bi bi-whatsapp"></i> Contact Us on WhatsApp
+          </a>
         </div>
 
       </div>
@@ -937,11 +1151,11 @@
                 </div>
                 <div class="gallery-overlay">
                   <h4>Natural Beauty</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                   <div class="gallery-actions">
                     <a href="assets/img/gallery/gallery-1.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
-                    <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -953,12 +1167,12 @@
                   <img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
-                  <h4>Urban Landscape</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <h4>Natural Beauty</h4>
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                   <div class="gallery-actions">
                     <a href="assets/img/gallery/gallery-2.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
-                    <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -970,12 +1184,12 @@
                   <img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
-                  <h4>Candid Moments</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <h4>Natural Beauty</h4>
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                   <div class="gallery-actions">
                     <a href="assets/img/gallery/gallery-3.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
-                    <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -987,12 +1201,12 @@
                   <img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
-                  <h4>Wilderness</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <h4>Natural Beauty</h4>
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                   <div class="gallery-actions">
                     <a href="assets/img/gallery/gallery-4.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
-                    <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -1004,12 +1218,12 @@
                   <img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
-                  <h4>Modern Design</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <h4>Natural Beauty</h4>
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                   <div class="gallery-actions">
                     <a href="assets/img/gallery/gallery-5.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
-                    <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -1021,12 +1235,12 @@
                   <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
-                  <h4>Portrait Studies</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <h4>Natural Beauty</h4>
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                   <div class="gallery-actions">
                     <a href="assets/img/gallery/gallery-6.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
-                    <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -1038,12 +1252,12 @@
                   <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
-                  <h4>Serene Waters</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <h4>Natural Beauty</h4>
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                   <div class="gallery-actions">
                     <a href="assets/img/gallery/gallery-7.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
-                    <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -1055,12 +1269,12 @@
                   <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="gallery-overlay">
-                  <h4>Historical Places</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <h4>Natural Beauty</h4>
+                  <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
                   <div class="gallery-actions">
                     <a href="assets/img/gallery/gallery-8.jpg" title="View Image" class="glightbox"><i
                         class="bi bi-eye"></i></a>
-                    <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a>
+                    <!-- <a href="gallery-details.html"><i class="bi bi-info-circle"></i></a> -->
                   </div>
                 </div>
               </div>
@@ -1236,23 +1450,22 @@
               safaris — your Sri Lankan adventure begins here.</p>
 
             <div class="action-section">
-              <div class="main-actions">
-                <a href="#" class="btn btn-explore">
-                  <i class="bi bi-compass"></i>
-                  Explore Sri Lanka
-                </a>
-                <a href="https://wa.me/94777402140" class="btn btn-deals">
-                  <i class="bi bi-percent"></i>
-                  Special Holiday Deals
-                </a>
+              <div class="main-actions d-flex flex-wrap gap-2 mb-3">
+              <a href="https://wa.me/94777402140?text=Hi%20Memorra%20Tours!%20I%20want%20to%20explore%20Sri%20Lanka." class="explore-btn">
+                <i class="bi bi-compass"></i>
+                Explore Sri Lanka
+              </a>
+              <a href="https://wa.me/94777402140?text=Hi%20Memorra%20Tours!%20Tell%20me%20about%20your%20special%20holiday%20deals." class="explore-btn" style="background:linear-gradient(135deg,#ffd700 0%,#1e5c6e 100%);color:#1e5c6e;">
+                <i class="bi bi-percent"></i>
+                Special Holiday Deals
+              </a>
               </div>
-
-              <div class="quick-contact">
-                <span class="contact-label">Need help planning?</span>
-                <a href="tel:+94771234567" class="contact-link">
-                  <i class="bi bi-telephone"></i>
-                  Call +94 77 123 4567
-                </a>
+              <div class="quick-contact mt-2">
+              <span class="contact-label text-secondary me-2">Need help planning?</span>
+              <a href="tel:+94777402140" class="quick-link">
+                <i class="bi bi-telephone"></i>
+                Call +94 77 7402140
+              </a>
               </div>
             </div>
           </div>
@@ -1404,7 +1617,7 @@
       <!-- Google Maps (Sri Lanka Office Location) -->
       <div class="map-section" data-aos="fade-up" data-aos-delay="200">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4047240.5968053406!2d78.0631109837925!3d7.854882768514259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri%20Lanka!5e0!3m2!1sen!2slk!4v1759566399080!5m2!1sen!2slk"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4047213.2839410105!2d80.70625!3d7.857684999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4926ec9ad34249%3A0x5a141efd223e24d0!2sMemorra%20Tours!5e0!3m2!1sen!2slk!4v1759850438349!5m2!1sen!2slk"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -1476,6 +1689,172 @@
     <!-- /Contact Section -->
 
   </main>
+
+  <!-- Destination Modals -->
+  
+  <!-- Beach Modal -->
+  <div class="modal fade destination-modal" id="modal-beach" tabindex="-1" aria-labelledby="beachModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="beachModalLabel">Tropical Beaches</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="destination-image">
+            <img src="assets/img/travel/sri-lanka-beach.jpg" alt="Tropical Beaches Sri Lanka" class="img-fluid">
+          </div>
+          <div class="destination-details">
+            <h4>Discover Sri Lanka's Stunning Coastline</h4>
+            <p>Experience the pristine golden sands and turquoise waters of Sri Lanka's most beautiful beaches. From the surfing paradise of Arugam Bay to the whale watching hub of Mirissa, our beach packages offer the perfect blend of relaxation and adventure.</p>
+            <p>Our beach tours include:</p>
+            <ul>
+              <li>Whale watching excursions in Mirissa</li>
+              <li>Surfing lessons in Arugam Bay</li>
+              <li>Snorkeling in the coral reefs of Trincomalee</li>
+              <li>Sunset boat rides in Unawatuna</li>
+              <li>Seafood dining experiences</li>
+            </ul>
+            <div class="destination-features">
+              <span class="feature-tag">Best Time: Nov-Apr</span>
+              <span class="feature-tag">Duration: 3-7 Days</span>
+              <span class="feature-tag">Difficulty: Easy</span>
+              <span class="feature-tag">Family Friendly</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="close-btn" data-bs-dismiss="modal">Close</button>
+          <a href="https://wa.me/94777402140?text=Hi%20Memorra%20Tours!%20I'm%20interested%20in%20your%20Tropical%20Beaches%20package." class="whatsapp-btn">
+            <i class="bi bi-whatsapp"></i> Contact on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hill Country Modal -->
+  <div class="modal fade destination-modal" id="modal-hillcountry" tabindex="-1" aria-labelledby="hillcountryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="hillcountryModalLabel">Hill Country Escape</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="destination-image">
+            <img src="assets/img/travel/sri-lanka-hillcountry.jpg" alt="Sri Lanka Hill Country" class="img-fluid">
+          </div>
+          <div class="destination-details">
+            <h4>Explore Sri Lanka's Scenic Highlands</h4>
+            <p>Journey through the misty mountains and lush tea plantations of Sri Lanka's hill country. Experience the famous train ride to Ella, visit working tea factories, and enjoy breathtaking views from mountain peaks.</p>
+            <p>Our hill country tours include:</p>
+            <ul>
+              <li>Scenic train journey from Kandy to Ella</li>
+              <li>Tea plantation visits and tastings</li>
+              <li>Hiking to Little Adam's Peak</li>
+              <li>Visiting waterfalls and botanical gardens</li>
+              <li>Staying in colonial-era bungalows</li>
+            </ul>
+            <div class="destination-features">
+              <span class="feature-tag">Best Time: Jan-Apr</span>
+              <span class="feature-tag">Duration: 4-6 Days</span>
+              <span class="feature-tag">Difficulty: Moderate</span>
+              <span class="feature-tag">Photography Hotspot</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="close-btn" data-bs-dismiss="modal">Close</button>
+          <a href="https://wa.me/94777402140?text=Hi%20Memorra%20Tours!%20I'm%20interested%20in%20your%20Hill%20Country%20Escape%20package." class="whatsapp-btn">
+            <i class="bi bi-whatsapp"></i> Contact on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cultural Modal -->
+  <div class="modal fade destination-modal" id="modal-cultural" tabindex="-1" aria-labelledby="culturalModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="culturalModalLabel">Cultural Heritage Trail</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="destination-image">
+            <img src="assets/img/travel/sri-lanka-cultural.jpg" alt="Sri Lanka Cultural Triangle" class="img-fluid">
+          </div>
+          <div class="destination-details">
+            <h4>Discover Sri Lanka's Ancient Civilizations</h4>
+            <p>Step back in time and explore the ancient kingdoms of Sri Lanka. From the magnificent rock fortress of Sigiriya to the sacred city of Anuradhapura, our cultural tours offer a deep dive into Sri Lanka's rich history and heritage.</p>
+            <p>Our cultural tours include:</p>
+            <ul>
+              <li>Climbing Sigiriya Rock Fortress</li>
+              <li>Exploring ancient cities of Polonnaruwa and Anuradhapura</li>
+              <li>Visiting the Dambulla Cave Temple</li>
+              <li>Traditional cultural shows</li>
+              <li>Local village experiences</li>
+            </ul>
+            <div class="destination-features">
+              <span class="feature-tag">Best Time: Dec-Mar</span>
+              <span class="feature-tag">Duration: 5-7 Days</span>
+              <span class="feature-tag">Difficulty: Moderate</span>
+              <span class="feature-tag">UNESCO Heritage Sites</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="close-btn" data-bs-dismiss="modal">Close</button>
+          <a href="https://wa.me/94777402140?text=Hi%20Memorra%20Tours!%20I'm%20interested%20in%20your%20Cultural%20Heritage%20Trail%20package." class="whatsapp-btn">
+            <i class="bi bi-whatsapp"></i> Contact on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Safari Modal -->
+  <div class="modal fade destination-modal" id="modal-safari" tabindex="-1" aria-labelledby="safariModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="safariModalLabel">Wildlife Safari</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="destination-image">
+            <img src="assets/img/travel/sri-lanka-safari.jpg" alt="Sri Lanka Safari Experience" class="img-fluid">
+          </div>
+          <div class="destination-details">
+            <h4>Encounter Sri Lanka's Incredible Wildlife</h4>
+            <p>Embark on an unforgettable safari adventure through Sri Lanka's national parks. Spot leopards, elephants, sloth bears, and a stunning variety of birds in their natural habitats.</p>
+            <p>Our wildlife safaris include:</p>
+            <ul>
+              <li>Early morning and evening jeep safaris</li>
+              <li>Expert local guides and trackers</li>
+              <li>Visits to Yala, Udawalawe, and Wilpattu National Parks</li>
+              <li>Elephant transit center visits</li>
+              <li>Bird watching experiences</li>
+            </ul>
+            <div class="destination-features">
+              <span class="feature-tag">Best Time: Feb-Jul</span>
+              <span class="feature-tag">Duration: 3-5 Days</span>
+              <span class="feature-tag">Difficulty: Easy</span>
+              <span class="feature-tag">Wildlife Photography</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="close-btn" data-bs-dismiss="modal">Close</button>
+          <a href="https://wa.me/94777402140?text=Hi%20Memorra%20Tours!%20I'm%20interested%20in%20your%20Wildlife%20Safari%20package." class="whatsapp-btn">
+            <i class="bi bi-whatsapp"></i> Contact on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <footer id="footer" class="footer position-relative dark-background">
 
